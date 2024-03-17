@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+*{
+margin:0;  
+padding:0;
+box-sizing:border-box;
+} 
+
+body{
+font-family: 'Amatic SC', cursive; 
+background:#131418;
+}
+
+.container{
+padding:15px;   
+width:370px;
+background:white;
+border-radius:3px;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+background:#FEC601;
+height:470px;
+overflow:hidden;
+transition:all .2s;
+}
+
+.container h2{
+text-align:center;
+color:white;
+font-size:25px;
+}
+
+.container .timer-box,.container .score-box{
+height:30px; 
+width:100px;
+background:#A4550A;
+border-radius:5px;
+padding:7px;
+display:flex;
+align-items:center;
+color:white;
+float:left;
+margin-left:55px;
+margin-top:13px;
+}
+
+.container .timer-box{
+width:80px;        
+}
+
+.container .timer-box .timer,.container .score-box .score{
+height:22px;  
+width:40px;
+background:#3C1802;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:3px;
+margin-left:8px;
+position:relative;
+left:20px;
+font-family: 'Paytone One', sans-serif;  
+}
+
+.container .timer-box .timer{
+ left:3px;       
+}
+
+.container .score-box .score{
+position:relative;  
+left:6px;
+}
+
+.timer-box i,.score-box .score-text{
+margin-left:7px;   
+font-size:13px;
+}
+
+
+.score-box .score-text{
+font-size:16px;        
+}
+
+.container .all-items{
+height:300px; 
+width:100%;
+position:relative;
+top:60px;
+}
+
+.container .all-items .item{
+height:70px;    
+width:70px;
+background:#3C1802;
+border-radius:100%;
+float:left;
+margin-left:32px;
+margin-top:20px;
+position:relative;
+top:-30px;
+}
+
+.container .all-items .item .whack-text{
+font-family: 'Paytone One', sans-serif;  
+position:absolute;  
+bottom:-5px;
+color:white;
+z-index:1;
+margin-left:3px;
+}
+
+.container .all-items .item .hole{
+height:65px;   
+width:65px;
+background:#A4550A;
+border-radius:100%;
+position:relative;
+top:5px;
+left:3px;
+overflow:hidden;
+display:flex;
+justify-content:center;
+}
+
+.container .all-items .item .hole img{
+height:55px;   
+width:100px;
+position:absolute;
+bottom:-53px;
+transition:all .2s;
+cursor:pointer;
+}
+
+.container .all-items .item .hole img.mole-appeared{
+bottom:-5px; 
+transition:all .2s;
+}
+
+.start-game-btn{
+all:unset;
+height:35px;
+width:130px;
+border:1px solid white;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+position:absolute;
+bottom:5px;
+left:50%;
+transform:translate(-50%,-50%);
+cursor:pointer;
+text-align:center;
+}
+
+.container .game-over{
+height:100%;  
+width:100%;
+background:rgba(0,0,0,0.5);
+position:absolute;
+top:0;
+left:0;
+display:none;
+}
+
+.game-over h3,.game-over .your-score-txt,.game-over .game-over-score{
+color:white;  
+position:absolute;
+left:50%;
+top:150px;
+transform:translate(-50%,-50%);
+font-size:50px;
+}
+
+.game-over .your-score-txt{
+font-size:25px;
+top:210px;
+}
+
+.game-over .game-over-score{
+font-family: 'Paytone One', sans-serif;  
+top:240px;
+font-size:25px;
+}
+
+.game-over button{
+all:unset;  
+height:35px;
+width:100px;
+border:1px solid white;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+float:left;
+margin-left:55px;
+cursor:pointer;
+position:absolute;
+bottom:130px;
+}
+
+.game-over .play-again-btn{
+right:60px;        
+}
